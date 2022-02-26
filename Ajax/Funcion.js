@@ -21,7 +21,7 @@ $("#enviar").on("click", function(e) {
     };
     $.ajax({
         type: "POST",
-        url: "RecibeClientes.php",
+        url: "RecibeClientesAjax.php",
         data: parametros,
         beforeSend: function(objeto) {
             $("#Msg").html('Cargando...');
